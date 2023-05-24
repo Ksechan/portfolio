@@ -16,34 +16,41 @@ const Home = () => {
           <S.HomeLink onClick={() => onClickPageHandler(0)}>
             {projectList[0].title}
           </S.HomeLink>
-          <S.LeftBlock>
+          <S.TitleBlock>
             {projectList.map((item) => {
               if (item.id > 0 && item.id < 4) {
                 return (
-                  <h3 key={item.id} onClick={() => onClickPageHandler(item.id)}>
-                    {item.title}
-                  </h3>
+                  <div key={item.id}>
+                    <h3
+                      key={item.id}
+                      onClick={() => onClickPageHandler(item.id)}
+                    >
+                      {item.title}
+                    </h3>
+                  </div>
                 );
               }
               return;
             })}
-          </S.LeftBlock>
+          </S.TitleBlock>
         </S.LeftBlockWrap>
         <S.CenterBlock>
           <PageInformation item={projectList[currentPage]} />
         </S.CenterBlock>
-        <S.RightBlock>
+        <S.TitleBlock>
           {projectList.map((item) => {
             if (item.id >= 4) {
               return (
-                <h3 key={item.id} onClick={() => onClickPageHandler(item.id)}>
-                  {item.title}
-                </h3>
+                <div key={item.id}>
+                  <h3 key={item.id} onClick={() => onClickPageHandler(item.id)}>
+                    {item.title}
+                  </h3>
+                </div>
               );
             }
             return;
           })}
-        </S.RightBlock>
+        </S.TitleBlock>
       </S.Container>
     </>
   );
