@@ -15,7 +15,7 @@ const S = {
     flex-direction: column;
   `,
 
-  LeftBlock: styled.div`
+  TitleBlock: styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,14 +23,21 @@ const S = {
 
     h3 {
       transform-origin: center;
-      transform: rotate(270deg);
       text-align: center;
       color: ${({ theme }) => theme.color.lightGray};
-      font-size: 24px;
+      font-size: 1.875rem;
       cursor: pointer;
+      padding: 16px 20px;
+      transition: 0.2s;
+    }
+    div {
+      display: flex;
+      justify-content: center;
     }
     h3:hover {
-      background-color: pink;
+      background-color: ${({ theme }) => theme.color.lightGray};
+      color: ${({ theme }) => theme.color.primary};
+      border-radius: 10px;
     }
   `,
 
@@ -38,21 +45,6 @@ const S = {
     display: flex;
     align-items: center;
     justify-content: center;
-  `,
-
-  RightBlock: styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    h3 {
-      transform-origin: center;
-      transform: rotate(90deg);
-      text-align: center;
-      color: ${({ theme }) => theme.color.lightGray};
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
   `,
 
   HomeLink: styled.h2`
