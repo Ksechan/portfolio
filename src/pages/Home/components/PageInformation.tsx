@@ -12,13 +12,19 @@ const S = {
     align-items: center;
   `,
   Title: styled.h1`
-    font-size: 3.75rem;
+    font-size: 4.5rem;
     color: ${({ theme }) => theme.color.primary};
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 24px;
   `,
 
   Description: styled.h4`
+    font-size: 2.25rem;
+    color: #ffeee4;
+    font-weight: 500;
+  `,
+
+  Description02: styled.h4`
     font-size: 2.25rem;
     color: #ffeee4;
     font-weight: 500;
@@ -31,6 +37,7 @@ const PageInformation = ({ item }: ProjectListProps) => {
     <S.Content>
       <S.Title>{item.title}</S.Title>
       <S.Description>{item.description}</S.Description>
+      <S.Description02>{item.description02}</S.Description02>
     </S.Content>
   );
 };
