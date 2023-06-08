@@ -4,11 +4,13 @@ import S from './style';
 import ProjectName from './ProjectName';
 import ProjectConcept from './ProjectConcept';
 import ProjectProgress from './ProjectProgress';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const ProjectPage = () => {
   const navigation = useNavigate();
+  const location = useLocation();
   const [animation, setAnimation] = useState(true);
+  const item = location.state.item;
 
   useEffect(() => {
     setTimeout(() => {
@@ -31,20 +33,20 @@ const ProjectPage = () => {
       ) : (
         <>
           {/* project name section */}
-          <ProjectName />
+          <ProjectName item={item} />
           {/* project concept section */}
-          <ProjectConcept />
+          <ProjectConcept item={item} />
           {/* project progress section */}
-          <ProjectProgress />
+          <ProjectProgress item={item} />
           <S.FinishSection>
             <S.FinishSectionTitle>THANK YOU FOR VIEWING</S.FinishSectionTitle>
             <S.FinishSectionContact>
               phone: 010-3356-9426
             </S.FinishSectionContact>
             <Link
-              to="javascript:void(0)"
               onClick={sendEmailHandler}
               style={{ textDecoration: 'none' }}
+              to={''}
             >
               <S.FinishSectionContact>
                 email: rlatpcks77@gmail.com
