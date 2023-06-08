@@ -4,11 +4,10 @@ import { visibleAnimation } from '../style';
 const S = {
   SecondSection: styled.section`
     width: 100%;
-    height: 100vh;
     animation: ${visibleAnimation} 0.5s;
     transition: 1s;
     display: flex;
-    padding: 40px 0 0 60px;
+    padding: 100px 0 0 60px;
   `,
 
   SecondSectionName: styled.h3`
@@ -21,7 +20,7 @@ const S = {
   `,
 
   SecondSectionTitleWrap: styled.div`
-    padding: 20px 0 200px 60px;
+    padding: 20px 0 300px 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
