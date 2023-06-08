@@ -39,6 +39,13 @@ const S = {
   FirstSectionImage: styled.img`
     width: 400px;
   `,
+
+  FirstSectionStack: styled.p`
+    font-size: 1.75rem;
+    color: ${({ theme }) => theme.color.lightGray};
+    max-width: 500px;
+    margin-bottom: 20px;
+  `,
 };
 
 export default S;
