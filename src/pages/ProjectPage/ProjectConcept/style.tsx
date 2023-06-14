@@ -28,9 +28,26 @@ const S = {
 
   SecondSectionImgWrap: styled.div``,
 
+  SecondSectionWebImgWrap: styled.div`
+    position: relative;
+  `,
+
   SecondSectionImg: styled.img`
-    width: 400px;
+    width: 600px;
     transform: rotate(-5deg);
+  `,
+
+  SecondSectionWebImg01: styled.img`
+    width: 800px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  `,
+
+  SecondSectionWebImg02: styled.img`
+    width: 800px;
+    transform: rotate(-5deg);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
   `,
 };
 
