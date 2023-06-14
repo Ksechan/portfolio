@@ -39,12 +39,32 @@ const S = {
   ThirdSectionImageWrap: styled.div`
     height: 800px;
     display: flex;
-    padding-top: 40px;
-    // margin-left: 120px;
   `,
 
-  ThirdSectionImage: styled.img`
-    width: 400px;
+  ThirdSectionImage: styled.img<{
+    marginTop?: number;
+    marginRight?: number;
+    width?: number;
+    height?: number;
+  }>`
+    width: ${({ width }) => (width ? width : 400)}px;
+    height: ${({ height }) => (height ? height : 760)}px;
+    margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+    margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    border-radius: 20px;
+  `,
+
+  ThirdSectionWebImage: styled.img<{
+    marginTop?: number;
+    marginRight?: number;
+    width?: number;
+    height?: number;
+  }>`
+    width: ${({ width }) => (width ? width : 1000)}px;
+    height: ${({ height }) => (height ? height : 600)}px;
+    margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+    margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    border-radius: 8px;
   `,
 
   ThirdSectionDescription: styled.p<{ marginRight?: number }>`
@@ -53,7 +73,9 @@ const S = {
     max-width: 800px;
     line-height: 40px;
     margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    white-space: pre-wrap;
   `,
 };
 
 export default S;
+``;

@@ -11,7 +11,7 @@ const S = {
   `,
 
   FirstSectionNameWrap: styled.div`
-    padding: 20px 0 0 30px;
+    padding: 60px 0 0 30px;
   `,
 
   FirstSectionName: styled.h3`
@@ -20,6 +20,15 @@ const S = {
     color: ${({ theme }) => theme.color.primary};
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 30px;
+  `,
+
+  FirstSectionWebName: styled.h3`
+    font-size: 6rem;
+    white-space: pre-wrap;
+    color: ${({ theme }) => theme.color.primary};
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 30px;
+    margin-right: 40px;
   `,
 
   FirstSectionTitle: styled.h2`
@@ -36,8 +45,15 @@ const S = {
     // margin-left: 120px;
   `,
 
-  FirstSectionImage: styled.img`
+  FirstSectionImage: styled.img<{ marginRight?: number }>`
     width: 400px;
+    margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+  `,
+
+  FirstSectionWebImage: styled.img<{ marginRight?: number }>`
+    width: 100%;
+    margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    border-radius: 12px;
   `,
 
   FirstSectionStack: styled.p`
