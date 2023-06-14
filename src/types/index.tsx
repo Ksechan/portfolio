@@ -3,6 +3,7 @@ export interface ProjectListType {
   title: string;
   description: string;
   description02?: string;
+  type: string;
   project?: {
     projectTitle: string;
     projectStack01: string;
@@ -18,15 +19,19 @@ export interface ProjectListType {
     projectConceptImg02: string;
     projectProgressDesc01: string;
     projectProgressDescTitle01: string;
-    projectProgressImg01: string;
+    projectProgressImg01_01: string;
+    projectProgressImg01_02: string;
     projectProgressDesc02: string;
     projectProgressDescTitle02: string;
-    projectProgressImg02: string;
+    projectProgressImg02_01: string;
+    projectProgressImg02_02: string;
     projectProgressDesc03: string;
     projectProgressDescTitle03: string;
-    projectProgressImg03: string;
+    projectProgressImg03_01: string;
+    projectProgressImg03_02: string;
     projectProgressDesc04: string;
     projectProgressDescTitle04: string;
-    projectProgressImg04: string;
+    projectProgressImg04_01: string;
+    projectProgressImg04_02: string;
   };
 }
