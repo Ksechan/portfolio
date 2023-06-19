@@ -4,7 +4,7 @@ import HanwhaMainImage02 from '@/assets/images/hanwha/hanwha_home02.png';
 import HanwhaConceptImage01 from '@/assets/images/hanwha/hanwha_concept01.png';
 import HanwhaProgressImage01_01 from '@/assets/images/hanwha/hanwha_map01.png';
 import HanwhaProgressImage01_02 from '@/assets/images/hanwha/hanwha_map02.png';
-import HanwhaProgressImage02 from '@/assets/images/hanwha/hanwha_reservation01.png';
+import HanwhaProgressImage02_01 from '@/assets/images/hanwha/hanwha_reservation01.png';
 import HanwhaProgressImage03_01 from '@/assets/images/hanwha/hanwha_chargingstatus01.png';
 import HanwhaProgressImage03_02 from '@/assets/images/hanwha/hanwha_chargingstatus02.gif';
 import HanwhaProgressImage04_01 from '@/assets/images/hanwha/hanwha_charging_history01.png';
@@ -17,6 +17,17 @@ import PantosProgressImage01 from '@/assets/images/pantos/pantos_member_manageme
 import PantosProgressImage02 from '@/assets/images/pantos/pantos_receipt.png';
 import PantosProgressImage03 from '@/assets/images/pantos/pantos_dashboard.png';
 import PantosProgressImage04 from '@/assets/images/pantos/pantos_settlement.png';
+// convatec images
+import ConvatecMainImage01 from '@/assets/images/convatec/convatec_main01.png';
+import ConvatecMainImage02 from '@/assets/images/convatec/convatec_main02.png';
+import ConvatecConceptImage01 from '@/assets/images/convatec/convatec_concept01.png';
+import ConvatecProgressImage01_01 from '@/assets/images/convatec/convatec_pdf01.png';
+import ConvatecProgressImage01_02 from '@/assets/images/convatec/convatec_pdf02.png';
+import ConvatecProgressImage02_01 from '@/assets/images/convatec/convatec_bookmark.png';
+import ConvatecProgressImage03_01 from '@/assets/images/convatec/convatec_memo.png';
+import ConvatecProgressImage03_02 from '@/assets/images/convatec/convatec_highlight.png';
+import ConvatecProgressImage04_01 from '@/assets/images/convatec/convatec_product01.png';
+import ConvatecProgressImage04_02 from '@/assets/images/convatec/convatec_product02.png';
 
 export const projectList = [
   {
@@ -52,7 +63,7 @@ export const projectList = [
       projectProgressDesc02:
         '현 위치를 기반으로 주변 충전소를 확인한 후 충전소 터치 시 충전소의 상태와 바로 예약할 수 있는 찜하기 기능이 있습니다. 지도뿐만 아니라 시간 기반으로 예약을 하고 싶은 전기차주를 위하여 먼저 원하는 시간을 선택하면 그 시간에 맞는 충전소만 보여지게 되며 그 중에 원하는 충전소를 먼저 찜할 수 있습니다.',
       projectProgressDescTitle02: 'RESERVATION',
-      projectProgressImg02: HanwhaProgressImage02,
+      projectProgressImg02_01: HanwhaProgressImage02_01,
       projectProgressDesc03:
         '실시간으로 충전현황도 확인 가능하며, 페이지 진입 시 충전 중일 경우 react-native animated를 이용한 인터렉션이 노출되며 실시간으로 남은 시간과 충전 금액 / 충전량 등을 확인할 수 있습니다.',
       projectProgressDescTitle03: 'CHARGING STATUS',
@@ -113,24 +124,28 @@ export const projectList = [
       projectStack03: 'Styled-component',
       projectStack04: 'Recoil',
       projectStack05: 'Axios',
-      mainImg01: '',
-      mainImg02: '',
-      projectConceptDesc01: '',
-      projectConceptImg01: '',
-      projectConceptDesc02: '',
+      mainImg01: ConvatecMainImage01,
+      mainImg02: ConvatecMainImage02,
+      projectConceptDesc01:
+        'convatec에서 출판한 임상 장•요루관리정석 도서를 PDF로 제공하는 앱을 개발 프로젝트',
+      projectConceptImg01: ConvatecConceptImage01,
+      projectConceptDesc02: `환자들 대상으로 임상 장•요루관리에 대한 정보를 담은 PDF를 제공합니다\n실제로 책을 보듯 중요한 부분에 메모를 할 수 있으며, 강조하고 싶은 부분에 형관펜으로 그어서 언제든 쉽게 다시 볼 수 있습니다.`,
       projectConceptImg02: '',
-      projectProgressDesc01: '',
-      projectProgressDescTitle01: '',
-      projectProgressImg01: '',
-      projectProgressDesc02: '',
-      projectProgressDescTitle02: '',
-      projectProgressImg02: '',
-      projectProgressDesc03: '',
-      projectProgressDescTitle03: '',
-      projectProgressImg03: '',
-      projectProgressDesc04: '',
-      projectProgressDescTitle04: '',
-      projectProgressImg04: '',
+      projectProgressDesc01: `PDF 페이지 첫 진입 시 튜토리얼 페이지가 overlay되며, PDF의 기본적인 사용법이 보여집니다.\n상단의 인덱싱 터치 시, 여러가지 인덱싱 페이지 제목이 나오며 터치하여 해당페이지로 이동 가능합니다.`,
+      projectProgressDescTitle01: 'PDF VIEWER',
+      projectProgressImg01_01: ConvatecProgressImage01_01,
+      projectProgressImg01_02: ConvatecProgressImage01_02,
+      projectProgressDesc02: `PDF페이지별로 bookmark 버튼을 터치하여 등록이 가능하며, 메인페이지에서 설정해둔 bookmark로 바로 이동이 가능합니다.\n우측 상단의 메모 / 북마크 버튼 터치 시, animation으로 toggle되며 현재 등록해 둔 메모를 확인하며 해당페이지로 이동 가능합니다.`,
+      projectProgressDescTitle02: 'BOOKMARK',
+      projectProgressImg02_01: ConvatecProgressImage02_01,
+      projectProgressDesc03: `PDF를 보며 저장해두고 싶은 위치에 memo를 입력하여 저장이 가능하며, 저장해둔 memo는 메인페이지에서 확인 가능합니다.\n실제 도서를 읽는 것처럼 highlight를 이용하여 강조를 해둘수있습니다.\n\nreact-native 내에서는 구현하기 어렵다고 판단하여 webview를 통하여 web기반으로 기능을 구현하여 앱 내에선 x,y좌표를 이용하여 해당 위치에 memo 및 highlight를 표시할 수 있게 개발하였습니다.`,
+      projectProgressDescTitle03: 'HIGHLIGHT & MEMO',
+      projectProgressImg03_01: ConvatecProgressImage03_01,
+      projectProgressImg03_02: ConvatecProgressImage03_02,
+      projectProgressDesc04: `PDF 정독 중 관련된 페이지에서 convatec의 상품정보 페이지로 갈 수 있는 버튼이 노출됩니다.\n언제든지 환자(사용자)에게 필요한 정보를 제공하기 위하여 특정 페이지에서만 버튼이 노출되게 개발하였고, 버튼 터치 시 별도의 페이지로 넘어가 해당 제품의 상세정보를 확인할 수 있습니다.`,
+      projectProgressDescTitle04: 'PRODUCT DETAIL',
+      projectProgressImg04_01: ConvatecProgressImage04_01,
+      projectProgressImg04_02: ConvatecProgressImage04_02,
     },
   },
   {
