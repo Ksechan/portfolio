@@ -44,6 +44,7 @@ const S = {
   ThirdSectionImage: styled.img<{
     marginTop?: number;
     marginRight?: number;
+    marginLeft?: number;
     width?: number;
     height?: number;
   }>`
@@ -51,6 +52,7 @@ const S = {
     height: ${({ height }) => (height ? height : 760)}px;
     margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
     margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    margin-left: ${({ marginLeft }) => (marginLeft ? marginLeft : 0)}px;
     border-radius: 20px;
   `,
 
