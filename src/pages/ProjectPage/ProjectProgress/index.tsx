@@ -42,6 +42,12 @@ const ProjectProgress = ({ item }: ProjectListProps) => {
               <S.ThirdSectionImage
                 src={item.project?.projectProgressImg02_01}
               />
+              {item.project?.projectProgressImg02_02 !== '' ? (
+                <S.ThirdSectionImage
+                  src={item.project?.projectProgressImg02_02}
+                  marginLeft={30}
+                />
+              ) : null}
             </S.ThirdSectionImageWrap>
           </S.ThirdSection>
 
