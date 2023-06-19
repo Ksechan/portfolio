@@ -10,11 +10,12 @@ export const visibleAnimation = keyframes`
 `;
 
 const CommonS = {
-  Container: styled.div`
+  Container: styled.div<{ animation?: boolean }>`
     background-color: ${({ theme }) => theme.color.bg};
     width: 100%;
     height: 100vh;
     padding: 40px;
+    overflow: ${({ animation }) => (animation ? 'hidden' : 'auto')};
   `,
   // common
   SectionNumber: styled.p<{

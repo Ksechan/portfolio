@@ -27,7 +27,7 @@ const ProjectPage = () => {
   };
 
   return (
-    <S.Container>
+    <S.Container animation={animation}>
       {animation ? (
         <IntroMessage />
       ) : (
