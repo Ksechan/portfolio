@@ -28,6 +28,18 @@ import ConvatecProgressImage03_01 from '@/assets/images/convatec/convatec_memo.p
 import ConvatecProgressImage03_02 from '@/assets/images/convatec/convatec_highlight.png';
 import ConvatecProgressImage04_01 from '@/assets/images/convatec/convatec_product01.png';
 import ConvatecProgressImage04_02 from '@/assets/images/convatec/convatec_product02.png';
+// hubbing images
+import HubbingMainImage01 from '@/assets/images/hubbing/hubbing_main02.png';
+import HubbingMainImage02 from '@/assets/images/hubbing/hubbing_main01.png';
+import HubbingConceptImage01 from '@/assets/images/hubbing/hubbing_concept.png';
+import HubbingProgressImage01_01 from '@/assets/images/hubbing/hubbing_swipe01.png';
+import HubbingProgressImage01_02 from '@/assets/images/hubbing/hubbing_swipe02.png';
+import HubbingProgressImage02_01 from '@/assets/images/hubbing/hubbing_calendar01.png';
+import HubbingProgressImage02_02 from '@/assets/images/hubbing/hubbing_calendar02.png';
+import HubbingProgressImage03_01 from '@/assets/images/hubbing/hubbing_working_history02.png';
+import HubbingProgressImage03_02 from '@/assets/images/hubbing/hubbing_working_history01.png';
+import HubbingProgressImage04_01 from '@/assets/images/hubbing/hubbing_community01.png';
+import HubbingProgressImage04_02 from '@/assets/images/hubbing/hubbing_community02.png';
 
 export const projectList = [
   {
@@ -64,6 +76,7 @@ export const projectList = [
         '현 위치를 기반으로 주변 충전소를 확인한 후 충전소 터치 시 충전소의 상태와 바로 예약할 수 있는 찜하기 기능이 있습니다. 지도뿐만 아니라 시간 기반으로 예약을 하고 싶은 전기차주를 위하여 먼저 원하는 시간을 선택하면 그 시간에 맞는 충전소만 보여지게 되며 그 중에 원하는 충전소를 먼저 찜할 수 있습니다.',
       projectProgressDescTitle02: 'RESERVATION',
       projectProgressImg02_01: HanwhaProgressImage02_01,
+      projectProgressImg02_02: '',
       projectProgressDesc03:
         '실시간으로 충전현황도 확인 가능하며, 페이지 진입 시 충전 중일 경우 react-native animated를 이용한 인터렉션이 노출되며 실시간으로 남은 시간과 충전 금액 / 충전량 등을 확인할 수 있습니다.',
       projectProgressDescTitle03: 'CHARGING STATUS',
@@ -101,6 +114,7 @@ export const projectList = [
       projectProgressDesc02: `기본 인수증 외의 인수증 템플릿을 custom하여 관리 가능합니다.\n기존의 종이 인수증 서명 방식은 분실의 위험이 있기에 이를 보완하기 위해 전자 인수증을 이용하여 간편하게 서명할 수 있도록 개발하였습니다.`,
       projectProgressDescTitle02: `RECEIPT\nMANAGEMENT`,
       projectProgressImg02_01: PantosProgressImage02,
+      projectProgressImg02_02: '',
       projectProgressDesc03:
         'chart.js의 line-chart와 doughnut-chart를 이용하여 각자 다른 차트를 사용함으로써 각종 운송 오더의 현황을 차별화되게 확인 할 수 있도록 개발하였습니다.\n오늘의 오더 / 이번주의 오더 / 이번달의 오더를 filter기능으로 확인 할 수 있고, 같은 방식으로 비정상인수 내역을 확인할 수 있어 인수 내역을 확실하게 관리할 수 있습니다.',
       projectProgressDescTitle03: 'CHART',
@@ -127,7 +141,7 @@ export const projectList = [
       mainImg01: ConvatecMainImage01,
       mainImg02: ConvatecMainImage02,
       projectConceptDesc01:
-        'convatec에서 출판한 임상 장•요루관리정석 도서를 PDF로 제공하는 앱을 개발 프로젝트',
+        'convatec에서 출판한 임상 장•요루관리정석 도서를 PDF로 제공하는 앱 개발 프로젝트',
       projectConceptImg01: ConvatecConceptImage01,
       projectConceptDesc02: `환자들 대상으로 임상 장•요루관리에 대한 정보를 담은 PDF를 제공합니다\n실제로 책을 보듯 중요한 부분에 메모를 할 수 있으며, 강조하고 싶은 부분에 형관펜으로 그어서 언제든 쉽게 다시 볼 수 있습니다.`,
       projectConceptImg02: '',
@@ -138,6 +152,7 @@ export const projectList = [
       projectProgressDesc02: `PDF페이지별로 bookmark 버튼을 터치하여 등록이 가능하며, 메인페이지에서 설정해둔 bookmark로 바로 이동이 가능합니다.\n우측 상단의 메모 / 북마크 버튼 터치 시, animation으로 toggle되며 현재 등록해 둔 메모를 확인하며 해당페이지로 이동 가능합니다.`,
       projectProgressDescTitle02: 'BOOKMARK',
       projectProgressImg02_01: ConvatecProgressImage02_01,
+      projectProgressImg02_02: '',
       projectProgressDesc03: `PDF를 보며 저장해두고 싶은 위치에 memo를 입력하여 저장이 가능하며, 저장해둔 memo는 메인페이지에서 확인 가능합니다.\n실제 도서를 읽는 것처럼 highlight를 이용하여 강조를 해둘수있습니다.\n\nreact-native 내에서는 구현하기 어렵다고 판단하여 webview를 통하여 web기반으로 기능을 구현하여 앱 내에선 x,y좌표를 이용하여 해당 위치에 memo 및 highlight를 표시할 수 있게 개발하였습니다.`,
       projectProgressDescTitle03: 'HIGHLIGHT & MEMO',
       projectProgressImg03_01: ConvatecProgressImage03_01,
@@ -194,24 +209,29 @@ export const projectList = [
       projectStack03: 'Styled-component',
       projectStack04: 'Recoil',
       projectStack05: 'Axios',
-      mainImg01: '',
-      mainImg02: '',
-      projectConceptDesc01: '',
-      projectConceptImg01: '',
-      projectConceptDesc02: '',
+      mainImg01: HubbingMainImage01,
+      mainImg02: HubbingMainImage02,
+      projectConceptDesc01: `사장님과 근무자의 양방향성 근무 관리 앱 개발 프로젝트`,
+      projectConceptImg01: HubbingConceptImage01,
+      projectConceptDesc02: `hubbing은 사장님과 근무자의 한달 근무내역을 앱 하나로 관리할 수 있는 앱입니다.\n\n달력을 통해 사장님은 전체 근무자의 근무 내역을 관리할 수 있으며, 근무자는 본인의 근무 내역을 확인하고 잘못된 근무 내역을 사장님에게 수정요청을 할 수 있습니다.`,
       projectConceptImg02: '',
-      projectProgressDesc01: '',
-      projectProgressDescTitle01: '',
-      projectProgressImg01: '',
-      projectProgressDesc02: '',
-      projectProgressDescTitle02: '',
-      projectProgressImg02: '',
-      projectProgressDesc03: '',
-      projectProgressDescTitle03: '',
-      projectProgressImg03: '',
-      projectProgressDesc04: '',
-      projectProgressDescTitle04: '',
-      projectProgressImg04: '',
+      projectProgressDesc01: `출근 및 퇴근 시 버튼 swipe를 통하여 출퇴근 관리를 할 수 있습니다\n앱의 편리함을 악용하여 근무시간 조작하는 경우를 방지하기 위하여 현재 위치를 파악하여 근무지 근처 및 근무 시간 10분전 / 퇴근시간부터 10분 후 까지만 swipe 버튼이 활성화 됩니다.\n\nswipe 기능은 90%이상 버튼을 움직일 경우만 동작하게끔 개발하였으며,\nreact-native-gesture-handler를 이용하였습니다.`,
+      projectProgressDescTitle01: 'CUMMUTE SWIPE',
+      projectProgressImg01_01: HubbingProgressImage01_01,
+      projectProgressImg01_02: HubbingProgressImage01_02,
+      projectProgressDesc02: `사장님의 경우 달력의 날짜를 터치 하여 특정 날의 모든 근무자의 근무내역을 확인할 수 있습니다. 달력 내 파란색 아이콘은 모든 근무자가 이상없이 근무한 날을 표현하는 것이고, 근무내역에 문제가 있을 경우 연두색 아이콘으로 노출되게 됩니다.\n\ncalendar의 custom을 위하여 react-native-calendar 라이브러리를 직접 수정하여 개발하였습니다.`,
+      projectProgressDescTitle02: 'WORKING CALENDAR',
+      projectProgressImg02_01: HubbingProgressImage02_01,
+      projectProgressImg02_02: HubbingProgressImage02_02,
+      projectProgressDesc03:
+        '근무자 회원 개인의 해당 달의 급여내역을 확인가능합니다. 기존에 사장님 회원이 근무자를 초대할 때 급여와 세금 등 입력한 정보를 토대로 노출되며, 급여 내역 및 근무 내역이 문제가 있을 경우 사장님 회원에게 직접 근무 내역을 수정요청할 수 있습니다.',
+      projectProgressDescTitle03: 'WORKING HISTORY',
+      projectProgressImg03_01: HubbingProgressImage03_01,
+      projectProgressImg03_02: HubbingProgressImage03_02,
+      projectProgressDesc04: `사장님 회원과 근무자 회원이 모두 열람 가능하고 댓글을 달 수 있는 커뮤니티입니다.\n커뮤니티 첫 진입 시 닉네임과 업종 선택을 하여 익명 기반으로 다양한 업종의 사장님 및 근무자들과 소통할 수 있는 공간입니다.\n특정 게시물의 좋아요를 누를 경우 사장님과 근무자의 좋아요 비율이 나타나는 재미있는 기능도 있습니다.`,
+      projectProgressDescTitle04: 'COMMUNITY',
+      projectProgressImg04_01: HubbingProgressImage04_01,
+      projectProgressImg04_02: HubbingProgressImage04_02,
     },
   },
   {
