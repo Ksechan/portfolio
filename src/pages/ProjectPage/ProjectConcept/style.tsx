@@ -33,7 +33,7 @@ const S = {
   `,
 
   SecondSectionImg: styled.img`
-    width: 600px;
+    width: 400px;
     transform: rotate(-5deg);
   `,
 

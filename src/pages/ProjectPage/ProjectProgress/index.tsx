@@ -50,7 +50,7 @@ const ProjectProgress = ({ item }: ProjectListProps) => {
               {item.project?.projectProgressImg03_02 ? (
                 <S.ThirdSectionImage
                   src={item.project?.projectProgressImg03_02}
-                  width={300}
+                  width={350}
                   height={640}
                   marginRight={20}
                 />
