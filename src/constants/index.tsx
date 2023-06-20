@@ -40,6 +40,17 @@ import HubbingProgressImage03_01 from '@/assets/images/hubbing/hubbing_working_h
 import HubbingProgressImage03_02 from '@/assets/images/hubbing/hubbing_working_history01.png';
 import HubbingProgressImage04_01 from '@/assets/images/hubbing/hubbing_community01.png';
 import HubbingProgressImage04_02 from '@/assets/images/hubbing/hubbing_community02.png';
+// school-trip images
+import SchoolTripMainImage01 from '@/assets/images/schooltrip/schooltrip_main.png';
+import SchoolTripConcept01 from '@/assets/images/schooltrip/schooltrip_concept02.png';
+import SchoolTripConcept02 from '@/assets/images/schooltrip/schooltrip_concept01.png';
+import SchoolTripProgress01_01 from '@/assets/images/schooltrip/schooltrip_request01.png';
+import SchoolTripProgress01_02 from '@/assets/images/schooltrip/schooltrip_request02.png';
+import SchoolTripProgress02_01 from '@/assets/images/schooltrip/schooltrip_check01.png';
+import SchoolTripProgress02_02 from '@/assets/images/schooltrip/schooltrip_check02.png';
+import SchoolTripProgress03_01 from '@/assets/images/schooltrip/schooltrip_modify01.png';
+import SchoolTripProgress03_02 from '@/assets/images/schooltrip/schooltrip_modify02.png';
+import SchoolTripProgress04_01 from '@/assets/images/schooltrip/schooltrip_recommend.png';
 
 export const projectList = [
   {
@@ -176,24 +187,29 @@ export const projectList = [
       projectStack03: 'Styled-component',
       projectStack04: 'Recoil',
       projectStack05: 'React-query',
-      mainImg01: '',
+      mainImg01: SchoolTripMainImage01,
       mainImg02: '',
-      projectConceptDesc01: '',
-      projectConceptImg01: '',
-      projectConceptDesc02: '',
-      projectConceptImg02: '',
-      projectProgressDesc01: '',
-      projectProgressDescTitle01: '',
-      projectProgressImg01: '',
-      projectProgressDesc02: '',
-      projectProgressDescTitle02: '',
-      projectProgressImg02: '',
-      projectProgressDesc03: '',
-      projectProgressDescTitle03: '',
-      projectProgressImg03: '',
-      projectProgressDesc04: '',
-      projectProgressDescTitle04: '',
-      projectProgressImg04: '',
+      projectConceptDesc01: '교육여행 맞춤 플랫폼 웹 서비스 개발',
+      projectConceptImg01: SchoolTripConcept01,
+      projectConceptDesc02: `학생들에게 필요한 경험을 제공하는 다양한 분야의 파트너들을 연결하여\n학생들에게 기억에 남을만한 교육여행을 추천하고 그에 맞는 견적서를 전달하여 최적의 교육여행을 만들어줍니다.`,
+      projectConceptImg02: SchoolTripConcept02,
+      projectProgressDesc01: `수많은 선택지를 제공하고 선택한 결과에 따라 교육여행 협력사 파트너에게 다양한 테마의 교육여행과 견적서를 추천 받을 수 있습니다.\n\n선택지마다 다양한 선택 결과를 backend에게 넘겨주어 선택 결과에 따라 다음 선택지가 변동되며, backend에게 받아오는 다양한 선택지를 고객에게 노출될 수 있게끔 개발하였습니다.`,
+      projectProgressDescTitle01: 'REQUEST FOR QUOTATION',
+      projectProgressImg01_01: SchoolTripProgress01_01,
+      projectProgressImg01_02: SchoolTripProgress01_02,
+      projectProgressDesc02: `직접 선택한 견적 요청 결과에 따른 협력사 파트너의 견적을 확인할 수 있습니다.\n\n견적 내 시간대 별 디테일한 교육여행 계획과 금액을 확인한 후 견적 확정 및 수정 요청을 할 수 있습니다.`,
+      projectProgressDescTitle02: 'CHECK QUOTATION',
+      projectProgressImg02_01: SchoolTripProgress02_01,
+      projectProgressImg02_02: SchoolTripProgress02_02,
+      projectProgressDesc03:
+        '견적 확인 후 수정이 필요한 부분이나 견적이 마음에 들지 않을 경우 재요청하여 다른 방향의 견적을 요청할 수 있습니다.\n고객의 수많은 수정 요청을 방지하기 위하여 3번의 수정 요청만 가능하며, 수정 요청을 할 경우 견적이 확정되어 다른 견적들은 열람이 불가능하게 개발하였습니다.',
+      projectProgressDescTitle03: 'MODIFYING QUOTATION',
+      projectProgressImg03_01: SchoolTripProgress03_01,
+      projectProgressImg03_02: SchoolTripProgress03_02,
+      projectProgressDesc04: `견적 요청을 하기 전에 먼저 school-trip에서 추천하는 여행지를 고를 수 있습니다\n'이달의 지역', '이달의 활동', '이달의 파트너'를 둘러보며 가장 인기있는 여행지 및 파트너사의 추천 여행지를 확인하여 견적요청 과정을 생략하고 바로 추천 여행지로 선택가능합니다.\n여행지 인기에 따라 내림차순으로 20개씩 노출되며, 스크롤할 때마다 infinite scroll로 새로운 여행지가 노출되게 개발하였습니다.`,
+      projectProgressDescTitle04: 'RECOMMEND',
+      projectProgressImg04_01: SchoolTripProgress04_01,
+      projectProgressImg04_02: '',
     },
   },
   {
