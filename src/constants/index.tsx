@@ -51,12 +51,22 @@ import SchoolTripProgress02_02 from '@/assets/images/schooltrip/schooltrip_check
 import SchoolTripProgress03_01 from '@/assets/images/schooltrip/schooltrip_modify01.png';
 import SchoolTripProgress03_02 from '@/assets/images/schooltrip/schooltrip_modify02.png';
 import SchoolTripProgress04_01 from '@/assets/images/schooltrip/schooltrip_recommend.png';
+// alba-edu images
+import AlbaEduMainImage from '@/assets/images/alba-edu/alba-edu_main.png';
+import AlbaEduConcept01 from '@/assets/images/alba-edu/alba-edu_concept01.png';
+import AlbaEduConcept02 from '@/assets/images/alba-edu/alba-edu_concept02.png';
+import AlbaEduProgress01_01 from '@/assets/images/alba-edu/alba-edu_seminar.png';
+import AlbaEduProgress02_01 from '@/assets/images/alba-edu/alba-edu_career01.png';
+import AlbaEduProgress02_02 from '@/assets/images/alba-edu/alba-edu_career02.png';
+import AlbaEduProgress03_01 from '@/assets/images/alba-edu/alba-edu_QnA.png';
+import AlbaEduProgress04_01 from '@/assets/images/alba-edu/alba-edu_OT.png';
 
 export const projectList = [
   {
     id: 0,
     title: 'sechan',
     description: '프론트엔드 김세찬입니다.',
+    type: 'sechan',
   },
   {
     id: 1,
@@ -263,24 +273,28 @@ export const projectList = [
       projectStack03: 'Styled-component',
       projectStack04: 'Recoil',
       projectStack05: 'Axios',
-      mainImg01: '',
+      mainImg01: AlbaEduMainImage,
       mainImg02: '',
       projectConceptDesc01: '',
-      projectConceptImg01: '',
-      projectConceptDesc02: '',
-      projectConceptImg02: '',
-      projectProgressDesc01: '',
-      projectProgressDescTitle01: '',
-      projectProgressImg01: '',
-      projectProgressDesc02: '',
-      projectProgressDescTitle02: '',
-      projectProgressImg02: '',
-      projectProgressDesc03: '',
-      projectProgressDescTitle03: '',
-      projectProgressImg03: '',
-      projectProgressDesc04: '',
-      projectProgressDescTitle04: '',
-      projectProgressImg04: '',
+      projectConceptImg01: AlbaEduConcept01,
+      projectConceptDesc02: `온라인상에서도 원하는 선생님을 선택하여 수업을 받을 수 있는 플랫폼이며\n\n'세미나' / '자료실' / '질의응답' 등 다양한 컨텐츠를 이용하여 접근성이 용이하게 공부를 도와주는 웹 서비스입니다.`,
+      projectConceptImg02: AlbaEduConcept02,
+      projectProgressDesc01: `'실시간 세미나', '예정된 세미나' 정보를 노출하여 학생이 원하는 세미나를 시청 가능합니다.\n\n실시간 세미나의 경우 예약하지 않아도 바로 결제하여 시청할 수 있으며, 예정된 세미나는 미리 결제하고 예약하여 시간에 맞춰 시청 가능합니다. 세미나의 경우 실시간으로 진행되기 때문에 zoom링크로 연결되게끔 개발하였습니다.`,
+      projectProgressDescTitle01: 'REAL-TIME SEMINAR',
+      projectProgressImg01_01: AlbaEduProgress01_01,
+      projectProgressImg01_02: '',
+      projectProgressDesc02: `대부분의 학생은 아직 진로에 대한 명확한 목표가 없습니다.\nalba-edu의 진로탐색 서비스의 다양한 질문과 간단한 설문을 통하여 강사들의 진로 방향에 대한 해답을 얻을 수 있습니다.`,
+      projectProgressDescTitle02: 'CAREER SEARCH',
+      projectProgressImg02_01: AlbaEduProgress02_01,
+      projectProgressImg02_02: AlbaEduProgress02_02,
+      projectProgressDesc03: `선생님 및 alba-edu 관리자가 자료실에 학습내용을 등록할 수 있습니다.\n\n현재 강의중인 도서 뿐만 아닌 다양한 부교재도 결제 후 이용 가능하며, 모르는 문제가 있을땐 질의 응답을 통하여 선생과 학생, 학생과 학생으로 답변을 얻을 수 있습니다.`,
+      projectProgressDescTitle03: 'REFERENCE ROOM',
+      projectProgressImg03_01: AlbaEduProgress03_01,
+      projectProgressImg03_02: '',
+      projectProgressDesc04: `1% 강사찾기를 통하여 자신에게 맞는 강사를 찾은 뒤 강사가 정한 시간에 맞춰 calendar를 이용하여 OT신청 및 과외신청을 할 수 있습니다.\n디자인에 맞추기 위해 react-calendar를 custom하여 개발하였습니다.`,
+      projectProgressDescTitle04: 'APPLICATION FOR TUTORING',
+      projectProgressImg04_01: AlbaEduProgress04_01,
+      projectProgressImg04_02: '',
     },
   },
 ];
