@@ -47,7 +47,11 @@ const S = {
 const PageInformation = ({ item }: ProjectListProps) => {
   const navigate = useNavigate();
   const onPageHandler = () => {
-    navigate('/project', { state: { item } });
+    if (item.id !== 0) {
+      navigate('/project', { state: { item } });
+    } else {
+      navigate('/mypage');
+    }
   };
 
   return (
