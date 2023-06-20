@@ -52,7 +52,10 @@ const S = {
 
   FirstSectionWebImage: styled.img<{ marginRight?: number }>`
     width: 100%;
+    height: auto;
     margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
+    border-radius: 12px;
+    object-fit: contain;
     border-radius: 12px;
   `,
 
