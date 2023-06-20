@@ -37,17 +37,19 @@ const S = {
     transform: rotate(-5deg);
   `,
 
-  SecondSectionWebImg01: styled.img`
-    width: 800px;
+  SecondSectionWebImg01: styled.img<{ width?: number; noShadow?: boolean }>`
+    width: ${({ width }) => (width ? width : 800)}px;
     position: absolute;
     top: 200px;
     left: 50px;
+    z-index: 2;
+    box-shadow: ${({ noShadow }) =>
+      noShadow ? '0px' : '-5px -10px 10px rgba(0, 0, 0, 0.3)'};
   `,
 
   SecondSectionWebImg02: styled.img`
     width: 800px;
     transform: rotate(-5deg);
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
   `,
 };
 

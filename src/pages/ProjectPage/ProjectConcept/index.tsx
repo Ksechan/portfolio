@@ -26,8 +26,12 @@ const ProjectConcept = ({ item }: ProjectListProps) => {
       ) : (
         <S.SecondSection>
           <S.SecondSectionWebImgWrap>
-            <S.SecondSectionWebImg01 src={item.project?.projectConceptImg01} />
-            <S.SecondSectionWebImg02 src={item.project?.projectConceptImg01} />
+            <S.SecondSectionWebImg01
+              src={item.project?.projectConceptImg01}
+              width={item.title === 'school-trip' ? 300 : 800}
+              noShadow={item.title === 'school-trip'}
+            />
+            <S.SecondSectionWebImg02 src={item.project?.projectConceptImg02} />
           </S.SecondSectionWebImgWrap>
           <S.SecondSectionTitleWrap>
             <S.SecondSectionName>{`PROJECT\nCONCEPT`}</S.SecondSectionName>
