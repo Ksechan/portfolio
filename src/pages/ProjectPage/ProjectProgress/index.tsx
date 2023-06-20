@@ -138,17 +138,27 @@ const ProjectProgress = ({ item }: ProjectListProps) => {
                 {item.project?.projectProgressDescTitle02}
               </S.ThirdSectionName>
             </S.ThirdSectionNameWrap>
-            <S.ThirdSectionIndependentImageWrap>
-              <S.ThirdSectionWebIndependentImage
-                src={item.project?.projectProgressImg02_01}
-                absolute
-              />
-              <S.ThirdSectionWebIndependentImage
-                src={item.project?.projectProgressImg02_02}
-                marginLeft={200}
-                marginTop={150}
-              />
-            </S.ThirdSectionIndependentImageWrap>
+            {item.title === 'school-trip' || item.title === 'alba-edu' ? (
+              <>
+                <S.ThirdSectionIndependentImageWrap>
+                  <S.ThirdSectionWebIndependentImage
+                    src={item.project?.projectProgressImg02_01}
+                    absolute
+                  />
+                  <S.ThirdSectionWebIndependentImage
+                    src={item.project?.projectProgressImg02_02}
+                    marginLeft={200}
+                    marginTop={150}
+                  />
+                </S.ThirdSectionIndependentImageWrap>
+              </>
+            ) : (
+              <S.ThirdSectionImageWrap>
+                <S.ThirdSectionWebImage
+                  src={item.project?.projectProgressImg02_01}
+                />
+              </S.ThirdSectionImageWrap>
+            )}
           </S.ThirdSection>
 
           <S.ThirdSection>
