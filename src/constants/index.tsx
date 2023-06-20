@@ -132,6 +132,7 @@ export const projectList = [
       projectProgressDesc01: `전체적인 회원을 jquery data-tables를 이용하여 테이블로 한눈에 볼 수 있게 개발하였으며, 상태별 / 날짜별로 검색이 가능합니다.\n현재 페이지 내에서 popup을 통하여 계정 등록이 가능합니다.`,
       projectProgressDescTitle01: 'MEMBER MANAGEMENT',
       projectProgressImg01_01: PantosProgressImage01,
+      projectProgressImg01_02: '',
       projectProgressDesc02: `기본 인수증 외의 인수증 템플릿을 custom하여 관리 가능합니다.\n기존의 종이 인수증 서명 방식은 분실의 위험이 있기에 이를 보완하기 위해 전자 인수증을 이용하여 간편하게 서명할 수 있도록 개발하였습니다.`,
       projectProgressDescTitle02: `RECEIPT\nMANAGEMENT`,
       projectProgressImg02_01: PantosProgressImage02,
@@ -140,10 +141,12 @@ export const projectList = [
         'chart.js의 line-chart와 doughnut-chart를 이용하여 각자 다른 차트를 사용함으로써 각종 운송 오더의 현황을 차별화되게 확인 할 수 있도록 개발하였습니다.\n오늘의 오더 / 이번주의 오더 / 이번달의 오더를 filter기능으로 확인 할 수 있고, 같은 방식으로 비정상인수 내역을 확인할 수 있어 인수 내역을 확실하게 관리할 수 있습니다.',
       projectProgressDescTitle03: 'CHART',
       projectProgressImg03_01: PantosProgressImage03,
+      projectProgressImg03_02: '',
       projectProgressDesc04:
         '화주와 운송사별로 상단의 버튼을 기준으로 정산 내역을 data-tables로 확인 가능합니다.\n기간별로 법인별로 구분하여 검색 가능하며, data-tables excel다운로드 기능을 이용하여 엑셀로 다운로드하여 PC내에서 관리할 수 있게 개발하였습니다.',
       projectProgressDescTitle04: `SETTLEMENT\nMANAGEMENT`,
       projectProgressImg04_01: PantosProgressImage04,
+      projectProgressImg04_02: '',
     },
   },
   {
