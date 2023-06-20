@@ -69,6 +69,32 @@ const S = {
     border-radius: 8px;
   `,
 
+  ThirdSectionIndependentImageWrap: styled.div`
+    height: 800px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+  `,
+
+  ThirdSectionWebIndependentImage: styled.img<{
+    marginTop?: number;
+    marginLeft?: number;
+    width?: number;
+    height?: number;
+    absolute?: boolean;
+  }>`
+    width: 600px;
+    height: 400px;
+    margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+    margin-left: ${({ marginLeft }) => (marginLeft ? marginLeft : 0)}px;
+    border-radius: 8px;
+    position: ${({ absolute }) => (absolute ? 'absolute' : '')};
+    top: ${({ absolute }) => (absolute ? 100 : 0)}px;
+    right: ${({ absolute }) => (absolute ? 240 : 0)}px;
+    box-shadow: ${({ absolute }) =>
+      absolute ? '5px 10px 10px rgba(0, 0, 0, 0.3)' : '0px'};
+  `,
+
   ThirdSectionDescription: styled.p<{ marginRight?: number }>`
     font-size: 1.5rem;
     color: ${({ theme }) => theme.color.lightGray};

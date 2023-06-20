@@ -103,9 +103,21 @@ const ProjectProgress = ({ item }: ProjectListProps) => {
           <S.ThirdSectionName>PROGRESS</S.ThirdSectionName>
           <S.ThirdSection>
             <S.ThirdSectionImageWrap>
-              <S.ThirdSectionWebImage
-                src={item.project?.projectProgressImg01_01}
-              />
+              {item.title === 'school-trip' ? (
+                <>
+                  <S.ThirdSectionImage
+                    src={item.project?.projectProgressImg01_01}
+                    marginRight={30}
+                  />
+                  <S.ThirdSectionImage
+                    src={item.project?.projectProgressImg01_02}
+                  />
+                </>
+              ) : (
+                <S.ThirdSectionWebImage
+                  src={item.project?.projectProgressImg01_01}
+                />
+              )}
             </S.ThirdSectionImageWrap>
             <S.ThirdSectionNameWrap>
               <S.ThirdSectionDescription>
@@ -126,18 +138,41 @@ const ProjectProgress = ({ item }: ProjectListProps) => {
                 {item.project?.projectProgressDescTitle02}
               </S.ThirdSectionName>
             </S.ThirdSectionNameWrap>
-            <S.ThirdSectionImageWrap>
-              <S.ThirdSectionWebImage
+            <S.ThirdSectionIndependentImageWrap>
+              <S.ThirdSectionWebIndependentImage
                 src={item.project?.projectProgressImg02_01}
+                absolute
               />
-            </S.ThirdSectionImageWrap>
+              <S.ThirdSectionWebIndependentImage
+                src={item.project?.projectProgressImg02_02}
+                marginLeft={200}
+                marginTop={150}
+              />
+            </S.ThirdSectionIndependentImageWrap>
           </S.ThirdSection>
 
           <S.ThirdSection>
             <S.ThirdSectionImageWrap>
-              <S.ThirdSectionWebImage
-                src={item.project?.projectProgressImg03_01}
-              />
+              {item.title === 'school-trip' ? (
+                <>
+                  {item.project?.projectProgressImg03_02 ? (
+                    <S.ThirdSectionImage
+                      src={item.project?.projectProgressImg03_02}
+                      width={350}
+                      height={640}
+                      marginRight={20}
+                    />
+                  ) : null}
+
+                  <S.ThirdSectionImage
+                    src={item.project?.projectProgressImg03_01}
+                  />
+                </>
+              ) : (
+                <S.ThirdSectionWebImage
+                  src={item.project?.projectProgressImg03_01}
+                />
+              )}
             </S.ThirdSectionImageWrap>
             <S.ThirdSectionNameWrap>
               <S.ThirdSectionName marginBottom={60} marginLeft={200}>
