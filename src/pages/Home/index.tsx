@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import S from './style';
-import { projectList } from '@/constants';
+import { projectList } from '@/data';
 import PageInformation from './components/PageInformation';
 
 const Home = () => {

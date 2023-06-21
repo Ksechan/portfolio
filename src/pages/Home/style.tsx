@@ -54,7 +54,11 @@ const S = {
     padding: 10px 0;
     cursor: pointer;
     color: ${({ theme }) => theme.color.lightGray};
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+
+    :hover {
+      color: ${({ theme }) => theme.color.primary};
+    }
   `,
 };
 
