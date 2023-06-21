@@ -23,7 +23,7 @@ const ProjectPage = () => {
   };
 
   const goHomeButtonHandler = () => {
-    navigation(-1);
+    navigation('/');
   };
 
   return (
