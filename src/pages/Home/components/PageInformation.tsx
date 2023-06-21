@@ -24,13 +24,13 @@ const S = {
     color: #ffeee4;
     font-weight: 500;
     margin-bottom: 10px;
+    line-height: 3rem;
   `,
 
   Description02: styled.h4`
     font-size: 2.25rem;
     color: #ffeee4;
     font-weight: 500;
-    margin-bottom: 20px;
   `,
 
   Button: styled.button`
@@ -41,6 +41,7 @@ const S = {
     font-size: 1.75rem;
     cursor: pointer;
     padding: 8px 24px;
+    margin-top: 1.5em;
   `,
 };
 
