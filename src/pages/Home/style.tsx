@@ -8,6 +8,10 @@ const S = {
     width: 100%;
     height: 100vh;
     background-color: ${({ theme }) => theme.color.bg};
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr 0fr 1fr;
+    }
   `,
 
   LeftBlockWrap: styled.div`
@@ -29,6 +33,20 @@ const S = {
       cursor: pointer;
       padding: 16px 20px;
       transition: 0.2s;
+
+      @media screen and (max-width: 1919px) {
+        font-size: 1.45rem;
+        padding: 10px 12px;
+      }
+
+      @media screen and (max-width: 1023px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        padding: 6px 8px;
+      }
     }
     div {
       display: flex;
@@ -55,6 +73,20 @@ const S = {
     cursor: pointer;
     color: ${({ theme }) => theme.color.lightGray};
     font-size: 1.5rem;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 1.25rem;
+      padding: 10px 12px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      padding: 6px 8px;
+    }
 
     :hover {
       color: ${({ theme }) => theme.color.primary};
