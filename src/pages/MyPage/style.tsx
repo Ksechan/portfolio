@@ -89,6 +89,38 @@ const S = {
     border: none;
     cursor: pointer;
   `,
+
+  HomeButtonWrap: styled.div`
+    width: 100%;
+    margin: 2em 0 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 1rem;
+      color: ${({ theme }) => theme.color.primary};
+      margin: 3em 0 3em;
+    }
+
+    button {
+      font-size: 1.25rem;
+      background-color: transparent;
+      border: none;
+      color: ${({ theme }) => theme.color.lightGray};
+      cursor: pointer;
+      transition: 0.2s;
+      border-radius: 6px;
+      padding: 6px 8px;
+
+      :hover {
+        background-color: ${({ theme }) => theme.color.lightGray};
+        color: ${({ theme }) => theme.color.primary};
+      }
+    }
+  `,
+
+  HomeButton: styled.button``,
 };
 
 export default S;

@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import IntroMessage from './components/IntroMessage';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { ProjectListType } from '@/types';
 import S from './style';
 import ProjectName from './ProjectName';
 import ProjectConcept from './ProjectConcept';
@@ -9,6 +11,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const ProjectPage = () => {
   const navigation = useNavigate();
   const location = useLocation();
+  const isMobile = useMediaQuery('(max-width: 480px)');
   const [animation, setAnimation] = useState(true);
   const item = location.state.item;
 
@@ -28,7 +31,7 @@ const ProjectPage = () => {
 
   return (
     <S.Container animation={animation}>
-      {animation ? (
+      {animation && !isMobile ? (
         <IntroMessage />
       ) : (
         <>
@@ -40,16 +43,14 @@ const ProjectPage = () => {
           <ProjectProgress item={item} />
           <S.FinishSection>
             <S.FinishSectionTitle>THANK YOU FOR VIEWING</S.FinishSectionTitle>
-            <S.FinishSectionContact>
-              phone: 010-3356-9426
-            </S.FinishSectionContact>
+            <S.FinishSectionContact>010-3356-9426</S.FinishSectionContact>
             <Link
               onClick={sendEmailHandler}
               style={{ textDecoration: 'none' }}
               to={''}
             >
               <S.FinishSectionContact>
-                email: rlatpcks77@gmail.com
+                rlatpcks77@gmail.com
               </S.FinishSectionContact>
             </Link>
             <Link
@@ -58,7 +59,7 @@ const ProjectPage = () => {
               style={{ textDecoration: 'none' }}
             >
               <S.FinishSectionContact>
-                github: https://github.com/Ksechan
+                https://github.com/Ksechan
               </S.FinishSectionContact>
             </Link>
             <S.FinishSectionButton onClick={goHomeButtonHandler}>

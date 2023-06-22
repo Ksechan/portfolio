@@ -68,7 +68,7 @@ const CommonS = {
   `,
 
   FinishSectionContact: styled.p`
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: ${({ theme }) => theme.color.lightGray};
     margin-bottom: 40px;
   `,

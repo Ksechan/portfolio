@@ -8,6 +8,10 @@ const MyPage = () => {
     return (window.location.href = 'mailto:rlatpcks77@gmail.com');
   };
 
+  const onHomeButtonHandler = () => {
+    navigate('/');
+  };
+
   return (
     <S.Container>
       <S.SectionTitle>김세찬</S.SectionTitle>
@@ -72,7 +76,7 @@ const MyPage = () => {
       {projectList.map((item) => {
         if (item.id > 0) {
           return (
-            <>
+            <div key={item.id}>
               <S.ProjectTitle
                 onClick={() => {
                   navigate('/project', { state: { item } });
@@ -108,10 +112,14 @@ const MyPage = () => {
                   </tr>
                 </tbody>
               </S.Table>
-            </>
+            </div>
           );
         }
       })}
+      <S.HomeButtonWrap>
+        <p>감사합니다</p>
+        <button onClick={onHomeButtonHandler}>HOME</button>
+      </S.HomeButtonWrap>
     </S.Container>
   );
 };
