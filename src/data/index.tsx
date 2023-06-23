@@ -71,7 +71,7 @@ export const projectList = [
   {
     id: 1,
     title: 'hanwha-motiev',
-    description: '한화모티브',
+    description: '한화모티브입니다.',
     description02: '기존 전기차 충전 한화모티브 앱 리뉴얼',
     period: '2023.01 ~ 2023.04',
     tech: 'react-native, typescript, recoil, react-query, styled-component',
@@ -101,12 +101,12 @@ export const projectList = [
       projectProgressImg02_01: HanwhaProgressImage02_01,
       projectProgressImg02_02: '',
       projectProgressDesc03:
-        '실시간으로 충전현황도 확인 가능하며, 페이지 진입 시 충전 중일 경우 react-native animated를 이용한 인터렉션이 노출되며 실시간으로 남은 시간과 충전 금액 / 충전량 등을 확인할 수 있습니다.',
+        '실시간으로 충전현황을 확인 가능하며, 페이지 진입 시 충전 중일 경우 react-native animated를 이용한 인터렉션이 노출되며 실시간으로 남은 시간과 충전 금액 / 충전량 등을 확인할 수 있습니다.',
       projectProgressDescTitle03: 'CHARGING STATUS',
       projectProgressImg03_01: HanwhaProgressImage03_01,
       projectProgressImg03_02: HanwhaProgressImage03_02,
       projectProgressDesc04:
-        'svg-chart를 이용하여 line-chart 및 curved-chart를 custom하여 개발하였습니다.\n 충전을 할 때마다 데이터가 점점 쌓여 가장 많이 충전한 달 / 주 / 충전량이 노출되며, 내가 선호하는 충전방식 및 자주 방문한 충전소 등의 내용을 차트를 통하여 확인할 수 있는 소소한 재미도 있습니다.',
+        'svg-chart를 이용하여 line-chart 및 curved-chart를 custom하여 개발하였습니다.\n충전을 할 때마다 데이터가 점점 쌓여 가장 많이 충전한 달 / 주 / 충전량이 노출되며, 내가 선호하는 충전방식 및 자주 방문한 충전소 등의 내용을 차트를 통하여 확인할 수 있는 소소한 재미도 있습니다.',
       projectProgressDescTitle04: 'CHARGING HISTORY',
       projectProgressImg04_01: HanwhaProgressImage04_01,
       projectProgressImg04_02: HanwhaProgressImage04_02,
@@ -238,7 +238,7 @@ export const projectList = [
     title: 'convatec',
     description: '콘바텍입니다.',
     description02: 'PDF 뷰어 앱 개발',
-    period: '2022.05 ~ 2023.06',
+    period: '2022.05 ~ 2022.06',
     tech: 'react-native, javascript, recoil, axios, styled-component',
     type: 'mobile',
     project: {
