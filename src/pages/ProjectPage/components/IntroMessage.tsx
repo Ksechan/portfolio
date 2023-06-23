@@ -41,6 +41,18 @@ const S = {
     white-space: pre-line;
     animation: ${textLeftAnimation} 2.5s;
     animation-fill-mode: forwards;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 2rem;
+    }
   `,
   IntroBigTitle: styled.h3`
     color: #ed413e;
@@ -49,6 +61,18 @@ const S = {
     letter-spacing: 2px;
     animation: ${textRightAnimation} 2.5s;
     animation-fill-mode: forwards;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 3.5rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 3rem;
+    }
   `,
 };
 

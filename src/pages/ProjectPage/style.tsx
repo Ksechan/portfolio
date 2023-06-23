@@ -16,6 +16,10 @@ const CommonS = {
     height: 100vh;
     padding: 40px;
     overflow: ${({ animation }) => (animation ? 'hidden' : 'auto')};
+
+    @media screen and (max-width: 780px) {
+      padding: 20px;
+    }
   `,
   // common
   SectionNumber: styled.p<{
@@ -32,6 +36,18 @@ const CommonS = {
     margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
     margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 0)}px;
     margin-left: ${({ marginLeft }) => (marginLeft ? marginLeft : 0)}px;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 1080px) {
+      font-size: 3.5rem;
+    }
   `,
   SectionDescription: styled.p<{
     marginTop?: number;
@@ -47,13 +63,31 @@ const CommonS = {
     margin-right: ${({ marginRight }) => (marginRight ? marginRight : 0)}px;
     margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 0)}px;
     margin-left: ${({ marginLeft }) => (marginLeft ? marginLeft : 0)}px;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 1rem;
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-left: 30px;
+      font-size: 0.8rem;
+      line-height: 24px;
+    }
   `,
   // finish section
   FinishSection: styled.section`
     width: 100%;
-    height: 100vh;
     animation: ${visibleAnimation} 0.5s;
-    padding: 160px 0 160px 0;
+    padding: 2em 0 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,19 +98,53 @@ const CommonS = {
     font-size: 6rem;
     color: ${({ theme }) => theme.color.primary};
     font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 1.3em;
+
+    @media screen and (max-width: 1919px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 780px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.5rem;
+    }
   `,
 
   FinishSectionContact: styled.p`
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: ${({ theme }) => theme.color.lightGray};
     margin-bottom: 40px;
-  `,
 
-  FinishSectionContactEmail: styled.link`
-    font-size: 2.25rem;
-    color: ${({ theme }) => theme.color.lightGray};
-    margin-bottom: 30px;
+    @media screen and (max-width: 1919px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 780px) {
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
   `,
 
   FinishSectionButton: styled.button`
@@ -91,6 +159,18 @@ const CommonS = {
     padding: 8px 16px;
     :hover {
       background-color: ${({ theme }) => theme.color.gray};
+    }
+
+    @media screen and (max-width: 1919px) {
+      font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 1079px) {
+      font-size: 1.3rem;
     }
   `,
 };
