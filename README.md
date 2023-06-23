@@ -2,5 +2,5 @@
 ---
 현재 보시는 웹페이지는 
 
-_vite_를 사용하여 만들었으며,
-_react + typescript_를 사용하여 제작하였습니다
+_vite_  를 사용하여 만들었으며,
+_react_  +  _typescript_ 를 사용하여 제작하였습니다
