@@ -88,6 +88,7 @@ const S = {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-decoration: underline;
   `,
 
   HomeButtonWrap: styled.div`
