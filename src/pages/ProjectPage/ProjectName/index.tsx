@@ -1,8 +1,10 @@
 import S from './style';
 import CommonS from '../style';
 import { ProjectListProps } from '@/pages/Home/components/PageInformation';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 const ProjectName = ({ item }: ProjectListProps) => {
+  const isTablet = useMediaQuery('(max-width: 768px)');
   return (
     <>
       {item.type === 'mobile' ? (
@@ -68,7 +70,7 @@ const ProjectName = ({ item }: ProjectListProps) => {
           <S.FirstSectionImageWrap>
             <S.FirstSectionWebImage
               src={item.project?.mainImg01}
-              marginRight={20}
+              marginRight={isTablet ? 0 : 20}
             />
           </S.FirstSectionImageWrap>
         </S.FirstSection>

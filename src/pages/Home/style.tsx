@@ -39,8 +39,8 @@ const S = {
         padding: 10px 12px;
       }
 
-      @media screen and (max-width: 1023px) {
-        font-size: 1rem;
+      @media screen and (max-width: 1279px) {
+        font-size: 1.3rem;
       }
 
       @media screen and (max-width: 768px) {
@@ -79,7 +79,7 @@ const S = {
       padding: 10px 12px;
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
       font-size: 1rem;
     }
 

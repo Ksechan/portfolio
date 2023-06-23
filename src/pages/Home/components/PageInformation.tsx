@@ -22,7 +22,7 @@ const S = {
       font-size: 4rem;
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
       font-size: 3rem;
     }
 
@@ -46,7 +46,7 @@ const S = {
       font-size: 2rem;
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
       font-size: 1.5rem;
       line-height: 2.25rem;
     }
@@ -71,7 +71,7 @@ const S = {
       font-size: 1.9rem;
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
       font-size: 1.4rem;
     }
 
@@ -101,7 +101,7 @@ const S = {
       padding: 6px 20px;
     }
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1279px) {
       font-size: 1.25rem;
       padding: 6px 20px;
     }

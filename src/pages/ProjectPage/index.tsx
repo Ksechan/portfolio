@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import IntroMessage from './components/IntroMessage';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import { ProjectListType } from '@/types';
 import S from './style';
 import ProjectName from './ProjectName';
 import ProjectConcept from './ProjectConcept';
@@ -11,14 +10,18 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 const ProjectPage = () => {
   const navigation = useNavigate();
   const location = useLocation();
-  const isMobile = useMediaQuery('(max-width: 480px)');
+  const isTablet = useMediaQuery('(max-width: 768px)');
   const [animation, setAnimation] = useState(true);
   const item = location.state.item;
 
   useEffect(() => {
-    setTimeout(() => {
+    if (isTablet) {
       setAnimation(false);
-    }, 2500);
+    } else {
+      setTimeout(() => {
+        setAnimation(false);
+      }, 2500);
+    }
   }, []);
 
   const sendEmailHandler = () => {
@@ -31,7 +34,7 @@ const ProjectPage = () => {
 
   return (
     <S.Container animation={animation}>
-      {animation && !isMobile ? (
+      {animation && !isTablet ? (
         <IntroMessage />
       ) : (
         <>
