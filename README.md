@@ -10,7 +10,7 @@ _react_  +  _typescript_ 를 사용하여 제작하였습니다
 ---
 
 
-![Uploading 스크린샷 2023-06-23 18.55.30.png…]()
+<img width="1674" alt="readme_image" src="https://github.com/Ksechan/portfolio/assets/74916518/2d5e0d4e-e798-4419-98cb-ce106b30bfd4">
 
 ### 좌우의 menu를 이용하여 해당 프로젝트 설명페이지에 접근할 수 있으며, 
 
