@@ -1,7 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-// 외부에서 import 할거니까 모듈 내보내자~!
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+  *{
+    box-sizing: border-box;
+  }
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #272625;
+}
 `;
